@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tamil Music Player</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="player-container">
+    <h2>🎵 Tamil Music Player</h2>
+
+    <!-- Search -->
+    <div class="search-bar">
+      <input type="text" id="search" placeholder="Search songs..." />
+    </div>
+
+    <!-- Album Art -->
+    <img id="album-art" src="songs/why_this_kolaveri.jpg" alt="Album Art" class="album-art" />
+
+    <!-- Song Info -->
+    <h3 id="song-title">Why This Kolaveri</h3>
+    <p id="artist">Dhanush</p>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button class="btn" id="prev">⏮</button>
+      <button class="btn" id="play">▶</button>
+      <button class="btn" id="next">⏭</button>
+      <button class="btn" id="shuffle">🔀</button>
+      <button class="btn" id="repeat">🔁</button>
+    </div>
+
+    <!-- Volume -->
+    <div class="volume-control">
+      <label>🔊</label>
+      <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5" />
+    </div>
+
+    <!-- Playlist -->
+    <div class="playlist">
+      <ul id="playlist"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
